@@ -1,0 +1,18 @@
+<h2>All Pizza Orders</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Pizza Type</th>
+            <th>Special Instructions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for order in orders %}
+        <tr>
+            <td>{{ order.pizza_type }}</td>
+            <td>{{ order.special_instructions }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
